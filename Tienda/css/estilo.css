@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color-pricipal: rgb(75, 199, 173);
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px 20px 50px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 25px;
+
+}
+
+header button {
+    height: 90px;
+    width: 100px;
+    font-size: 2em;
+    border: none;
+    background-color:var(--color-pricipal);
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+header button:hover {
+    background-color: black;
+    color: red;
+    transition: 1s;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    height: 60%;
+}
+
+.contendedor-cartas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    height: 84vh;
+    gap: 15px;
+    padding: 0 20px 0 20px;
+    margin: 0;
+}
+
+.carta {
+    border-radius: 30px;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(239, 239, 239);
+}
+.carta:hover{
+    background-color: var(--color-pricipal);
+    transition: 1s;
+    /* .carro{
+        background-color: black;
+        color: red;
+        transition: 1s;
+    } */
+}
+.carta img{
+    height: 250px;
+}
+.carta button{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 0 0 30px 30px;
+    border: none;
+    background-color: var(--color-pricipal);
+    color: white;
+    cursor: pointer;
+}
+.carta h5{
+    font-size: 20px;
+}
+.carta h3{
+    font-size: 30px;
+}
+.lista{
+    width: 19%;
+    margin: 0;
+    margin-left: 15px;
+    padding: 25px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.lista button{
+    margin-top: 100px;
+    width: 70%;
+    height: 50px;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--color-pricipal);
+    color: white;
+}
+
+.lista #ule{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.lista #ule li{
+    background-color: var(--color-pricipal);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+.lista #ule li i{
+    background-color:rgb(75, 199, 173);
+    padding: 5px;
+    border-radius: 50%;
+}
+.pagar{
+    margin-top: 50px;
+    text-align: center;
+    border: none;
+    background-color: rgba(228, 0, 0,0.8);
+    border-radius: 15px;
+    font-size: 30px;
+    width: 200px;
+    height: 80px;
+    color: white;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header img{
+    width: 100px;
+}
